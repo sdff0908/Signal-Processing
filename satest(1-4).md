@@ -56,7 +56,10 @@ plt.ylabel('amplitude')
 plt.plot(n, sig)
 plt.show()
 ```
-<img width="459" alt="캡처" src="https://user-images.githubusercontent.com/72610879/129422892-c8b279fb-2b19-41f6-9aed-bc1690c0c2fd.PNG">
+![다운로드 (13)](https://user-images.githubusercontent.com/72610879/129423016-20eceee4-2b4e-4153-8eeb-3df4b99ad282.png)
+
+![다운로드 (14)](https://user-images.githubusercontent.com/72610879/129423028-985f9d09-ceb8-411d-8635-53317e74e003.png)
+
 
 ### 3. window
 
