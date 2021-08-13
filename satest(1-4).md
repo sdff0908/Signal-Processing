@@ -54,8 +54,11 @@ plt.xlabel('sample #')
 plt.ylabel('amplitude')
 plt.plot(n, sig)
 ```
+
+
 ![다운로드 (11)](https://user-images.githubusercontent.com/72610879/129422486-82f396ca-6cec-4693-a11e-da8c5c03a056.png)
 ![다운로드 (12)](https://user-images.githubusercontent.com/72610879/129422489-4d23dcac-6e67-49f4-ae63-7705a1eb8482.png)
+
 
 ### 3. window
 
@@ -89,8 +92,11 @@ plt.xlim(0,0.1)
 plt.grid()
 plt.show()
 ```
+
+
 ![다운로드 (8)](https://user-images.githubusercontent.com/72610879/129422169-e583d5b6-759c-4c25-9f7b-6acc68d07cdd.png)
 ![다운로드 (10)](https://user-images.githubusercontent.com/72610879/129422515-897e962c-2abe-4c82-bd46-9d6494e55149.png)
+
 
 (1) n_fft : 몇 개의 샘플을 푸리에 변환할지 결정한다. 이때 n_fft > (푸리에 변환할 신호의 길이) 이어야 한다. 컴퓨터 연산 속도를 위해 주로 2의 제곱수를 사용한다.
 
@@ -171,6 +177,7 @@ plt.show()
 ```
 
 len(energy_mag)) = len(sig) / hop_length , 이 값이 소수점으로 떨어지면 +1
+
 
 ![다운로드](https://user-images.githubusercontent.com/72610879/129422198-ca6be0c3-6b25-4fd0-8bc3-4ff39e7d9bb2.png)
 
@@ -259,6 +266,7 @@ N : frame_length
 n: frame 개수, len(sig) / hop_length, 이 값이 소수점으로 떨어지면 +1
 
 Z(n) : n번째 window frame에 대한 식, 전체 ZCR 값은 {Z(0), Z(1), Z(2), ..., Z(n)}
+
 
 ![다운로드 (7)](https://user-images.githubusercontent.com/72610879/129422244-e611646d-f46d-4c09-a03c-f9ea18c7ff9b.png)
 
