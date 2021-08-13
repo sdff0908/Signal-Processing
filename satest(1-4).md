@@ -36,7 +36,7 @@ def cutoff_freq_filter(data, sampling_rate, cut_frequency):
 sampling_rate = 10000
 
 # load speech signal
-sig, sr = librosa.load('/content/drive/MyDrive/sa.m4a', sr=sampling_rate)
+sig, sr = librosa.load('/content/drive/MyDrive/sam.m4a', sr=sampling_rate)
 
 # x_axis: time
 t = np.arange(0, len(sig)/sr, 1/sr) 
@@ -54,11 +54,7 @@ plt.xlabel('sample #')
 plt.ylabel('amplitude')
 plt.plot(n, sig)
 ```
-
-
-![다운로드 (11)](https://user-images.githubusercontent.com/72610879/129422486-82f396ca-6cec-4693-a11e-da8c5c03a056.png)
-![다운로드 (12)](https://user-images.githubusercontent.com/72610879/129422489-4d23dcac-6e67-49f4-ae63-7705a1eb8482.png)
-
+![다운로드 (2)](https://user-images.githubusercontent.com/72610879/129422686-073181cd-68be-4016-a839-79bc01186a44.png)
 
 ### 3. window
 
