@@ -41,20 +41,22 @@ sig, sr = librosa.load('/content/drive/MyDrive/sam.m4a', sr=sampling_rate)
 # x_axis: time
 t = np.arange(0, len(sig)/sr, 1/sr) 
 plt.figure(1, figsize=(12,2))
-plt.title('/sa/')
+plt.title('/sam/')
 plt.xlabel('time(s)')
 plt.ylabel('amplitude')
 plt.plot(t, sig)
+plt.show()
 
 # x_axis: sample number
 n = np.arange(0, len(sig), 1)
 plt.figure(2, figsize=(12,2))
-plt.title('/sa/')
+plt.title('/sam/')
 plt.xlabel('sample #')
 plt.ylabel('amplitude')
 plt.plot(n, sig)
+plt.show()
 ```
-![다운로드 (2)](https://user-images.githubusercontent.com/72610879/129422686-073181cd-68be-4016-a839-79bc01186a44.png)
+<img width="459" alt="캡처" src="https://user-images.githubusercontent.com/72610879/129422892-c8b279fb-2b19-41f6-9aed-bc1690c0c2fd.PNG">
 
 ### 3. window
 
