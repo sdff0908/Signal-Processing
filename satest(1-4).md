@@ -106,9 +106,9 @@ n_fft >= (푸리에 변환할 신호의 길이) : 신호의 모든 샘플에 대
 n_fft <  (푸리에 변환할 신호의 길이) : 전체 신호에 대해 푸리에 변환이 이루어지지 않는다. 신호 왜곡 발생
 
 (2) dB
-$$
-dB = 20 \times log_{10}(signal/signal.max())
-$$
+
+<img width="237" alt="3" src="https://user-images.githubusercontent.com/72610879/129423760-f19620ba-84ee-46f4-b769-78cdcf4a86a2.PNG">
+
 signal/signal.max() : normalization, dB단위에서 신호의 최댓값을 0으로 만들어준다.
 
 -3dB : 처음 신호의 에너지가 절반이 되는 지점으로, 3dB bandwidth는 이때의 주파수를 가리킨다. 위 그래프에서 3dB bandwidth는 약 0.04 rad/samples 
@@ -120,15 +120,12 @@ np.fft.fft()는 (-pi, pi) 범위에 대해서 푸리에 변환. 하지만 현실
 (4) np.fft.fftfreq()
 
 frequency 범위로 주파수 나타낸다. 위 코드에서는 fftfreq()를 사용하지 않고 (0, pi) 범위에 대한 angular frequency를 나타내었다. 
-$$
-angular frequency(\omega) = 2\pi \times  np.fft.fftfreq()
-$$
+
+<img width="294" alt="2" src="https://user-images.githubusercontent.com/72610879/129423782-687cd423-7a1b-4282-97cd-27577cd8463d.PNG">
 
 ### 4. Short-Time Energy(STE)
 
-$$
-Q_{STE}(n)=\sum_{m=-\infin}^{\infin}\left|s(m)w(n-m)\right|^2
-$$
+<img width="224" alt="1" src="https://user-images.githubusercontent.com/72610879/129423807-2409da60-9d3a-48cb-b0e2-d79644debef6.PNG">
 
 s(m) : speech signal
 
@@ -245,18 +242,7 @@ plt.grid()
 plt.show()
 ```
 
-$$
-Z(n)=0.5\sum_{m=0}^{N-1}\left|sgn(x_n(m))-sgn(x_n(m-1))\right|
-$$
-
-$$
-sgn(x_n(m)) =\begin{cases}1 & x_n(m)\ge0\\
--1 & x_n(m)<0\end{cases}
-$$
-
-$$
-x_n(m)=s(m)w(n-m)
-$$
+<img width="292" alt="4" src="https://user-images.githubusercontent.com/72610879/129423818-cf592932-5f13-4f9d-860f-d15954dec529.PNG">
 
 s(m) : speech signal
 
