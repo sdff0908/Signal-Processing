@@ -55,9 +55,9 @@ plt.ylabel('amplitude')
 plt.plot(n, sig)
 ```
 
-![다운로드 (1)](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(1)-1628878700846.png)
 
-![](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png)
+![다운로드 (1)](https://user-images.githubusercontent.com/72610879/129422081-8341251a-d3cd-4248-8a35-22f38bba9eda.png)
+![다운로드 (2)](https://user-images.githubusercontent.com/72610879/129422107-bee71d5d-ff3a-4ae0-841b-54cb6546efc1.png)
 
 ### 3. window
 
@@ -92,9 +92,9 @@ plt.grid()
 plt.show()
 ```
 
-![](md-images/hamming.png)
 
-![](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(1).png)
+![다운로드 (8)](https://user-images.githubusercontent.com/72610879/129422169-e583d5b6-759c-4c25-9f7b-6acc68d07cdd.png)
+![다운로드 (9)](https://user-images.githubusercontent.com/72610879/129422172-0b6acfc2-5945-4306-b50a-d06a07c3a19c.png)
 
 (1) n_fft : 몇 개의 샘플을 푸리에 변환할지 결정한다. 이때 n_fft > (푸리에 변환할 신호의 길이) 이어야 한다. 컴퓨터 연산 속도를 위해 주로 2의 제곱수를 사용한다.
 
@@ -175,9 +175,7 @@ plt.show()
 ```
 
 len(energy_mag)) = len(sig) / hop_length , 이 값이 소수점으로 떨어지면 +1
-
-![](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-1628878539390.png)
-
+![다운로드](https://user-images.githubusercontent.com/72610879/129422198-ca6be0c3-6b25-4fd0-8bc3-4ff39e7d9bb2.png)
 유성음 구간에서 STE 값 > 무성음 구간에서 STE 값(0에 근사) → 유성음과 무성음 구분 가능
 
 ### 5. Zero-Crossing Rate(ZCR)
@@ -264,7 +262,7 @@ n: frame 개수, len(sig) / hop_length, 이 값이 소수점으로 떨어지면 
 
 Z(n) : n번째 window frame에 대한 식, 전체 ZCR 값은 {Z(0), Z(1), Z(2), ..., Z(n)}
 
-![](md-images/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(7).png)
+![다운로드 (7)](https://user-images.githubusercontent.com/72610879/129422244-e611646d-f46d-4c09-a03c-f9ea18c7ff9b.png)
 
 유성음 구간에서 ZCR값 < 무성음 구간에서 ZCR 값 → 유성음과 무성음 구분 가능
 
