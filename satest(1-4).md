@@ -70,6 +70,7 @@ speech signal은 여러 phoneme이 시간에 따라 변화
 ```python
 # plot hamming window 
 length = 256
+n = np.arange(0, length, 1)
 h_window = 0.54 - 0.46 * np.cos(2 * np.pi * n / (length - 1))
 
 plt.plot(n, h_window)
